@@ -53,7 +53,7 @@ else:
 
 
 @client.on_message(
-    filters.command("repo", config.PREFIXES) & ~filters.bot & ~filters.edited
+    filters.command("boarepo", config.PREFIXES) & ~filters.bot & ~filters.edited
 )
 @handle_error
 async def repo(_, message: Message):
@@ -61,7 +61,7 @@ async def repo(_, message: Message):
 
 
 @client.on_message(
-    filters.command("ping", config.PREFIXES) & ~filters.bot & ~filters.edited
+    filters.command("boaping", config.PREFIXES) & ~filters.bot & ~filters.edited
 )
 @handle_error
 async def ping(_, message: Message):
@@ -69,7 +69,7 @@ async def ping(_, message: Message):
 
 
 @client.on_message(
-    filters.command("start", config.PREFIXES) & ~filters.bot & ~filters.edited
+    filters.command("boastart", config.PREFIXES) & ~filters.bot & ~filters.edited
 )
 @language
 @handle_error
@@ -78,7 +78,7 @@ async def start(_, message: Message, lang):
 
 
 @client.on_message(
-    filters.command("help", config.PREFIXES) & ~filters.private & ~filters.edited
+    filters.command("boahelp", config.PREFIXES) & ~filters.private & ~filters.edited
 )
 @language
 @handle_error
@@ -87,7 +87,7 @@ async def help(_, message: Message, lang):
 
 
 @client.on_message(
-    filters.command(["p", "play"], config.PREFIXES) & ~filters.private & ~filters.edited
+    filters.command(["vplay", "play"], config.PREFIXES) & ~filters.private & ~filters.edited
 )
 @register
 @language
