@@ -63,12 +63,10 @@
       "SPOTIFY_CLIENT_ID": {
           "description": "Spotify client id get it from https://developer.spotify.com/dashboard/applications",
           "required": false
-          
       },
       "SPOTIFY_CLIENT_SECRET": {
           "description": "Spotify client secret get it from https://developer.spotify.com/dashboard/applications",
           "required": false
-          
       }
     },
     "formation": {
